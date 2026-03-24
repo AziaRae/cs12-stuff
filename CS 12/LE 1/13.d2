@@ -1,0 +1,37 @@
+GalladeGeneration(ABC): {
+  shape: class
+
+  +get_ability_set(): set\[str\]
+}
+
+GalladeGenerationIV: {
+  shape: class
+
+  +steadfast()
+}
+
+GalladeGenerationV: {
+  shape: class
+
+  +justified()
+}
+
+GalladeGenerationVI: {
+  shape: class
+}
+
+GalladeGenerationVII: {
+  shape: class
+}
+
+GalladeGenerationVIII: {
+  shape: class
+}
+
+GalladeGenerationIX: {
+  shape: class
+
+  +sharpness()
+}
+
+GalladeGeneration(ABC) -> GalladeGenerationIV -> GalladeGenerationV -> GalladeGenerationVI -> GalladeGenerationVII -> GalladeGenerationVIII -> GalladeGenerationIX
