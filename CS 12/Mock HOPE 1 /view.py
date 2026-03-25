@@ -38,7 +38,7 @@ class View:
             print("Failed")
             return
             
-        return crop
+        return crop.lower()
     
     def prompt_action(self) -> str:
         action: str = input("- ")

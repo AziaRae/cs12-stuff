@@ -70,11 +70,11 @@ class Controller:
         view: View = self._view
 
         model.initialize_grid()
-        model.watering_can_type.get_grid(model.seed_packet_mode.grid)
 
         while model.continue_game:
             view.display_day(model.current_day)
             view.display_pesos(model.pesos)
             view.display_grid(model.grid)
+            model.watering_can_type.get_grid(model.seed_packet_mode.grid)
             model, view = self.prompt_action(model, view)
             
